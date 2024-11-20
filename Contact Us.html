@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+header{
+    position:relative;
+    top: 0;
+    left: 0;
+    padding:15px 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width:90%;
+    z-index: 10;
+    margin-left: 90px;
+}
+.logo {
+    background: transparent;
+}
+.logo-img {
+    height: 80px;
+    width: auto; 
+    background: none;
+}
+.nav a{
+    font-family:"Poppins",sans-serif;
+    font-size: 14px;
+    font-weight:normal;
+    margin-right: 40px;
+    color:black;
+    position: relative;
+    text-decoration: none;
+}
+.nav a::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:100%;
+    width:0%;
+    transition: 0.2s;
+    background: black;
+    height: 2px;
+}
+.nav a:hover::before{
+    width:100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #2c3e50;
+}
+.header-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.header-container p {
+  font-size: 1.1em;
+  color: #7f8c8d;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10%;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-form, .contact-details {
+  width: 45%;
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-form h2, .contact-details h2 {
+  font-size: 1.75em;
+  margin-bottom: 20px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 500;
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: #3498db;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #2980b9;
+}
+
+.contact-details ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.contact-details li {
+  margin-bottom: 10px;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-weight: 600;
+  background-color: #28333f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: #000000;
+}
+
+.map-section {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+footer {
+  background-color: #34495e;
+  color: white;
+  padding: 30px 10%;
+  text-align: center;
+}
+
+.footer-container p {
+  font-size: 1em;
+}
+
+.footer-link {
+  color: white;
+  margin: 0 15px;
+  font-size: 0.9em;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="Logo-Photoroom.png" alt="logo" class="logo-img">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="Home.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="Book_now.html">Book Now</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    <center>
+        <div class="header-container">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you. Get in touch with us for any questions or inquiries.</p>
+          </div>
+    </center>
+  <main>
+    <section class="contact-section">
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="POST">
+          <div class="form-field">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="How can we assist you?" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-details">
+        <h2>Contact Details</h2>
+        <p>If you'd prefer, you can reach us via these methods:</p>
+        <ul>
+          <li><strong>Phone:</strong> <a href="tel:+919897102513">9897102513</a></li>
+          <li><strong>Email:</strong> <a href="mailto:info@astonmartin.com">info@astonmartin.com</a></li>
+          <li><strong>Address:</strong> Banbury Road, Gaydon, Warwick CV35 0DB England</li>
+        </ul>
+
+        <div class="social-media">
+          <a href="https://www.facebook.com/astonmartin/" target="_blank" class="social-icon">Facebook</a>
+          <a href="hhttps://twitter.com/astonmartin?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="social-icon">Twitter</a>
+          <a href="https://www.instagram.com/astonmartin/?hl=en" target="_blank" class="social-icon">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <h2>Visit Us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 Aston Martin. All Rights Reserved.</p>
+      <div>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <span>|</span>
+        <a href="#" class="footer-link">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

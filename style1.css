@@ -1,0 +1,219 @@
+header{
+    position:relative;
+    top: 0;
+    left: 0;
+    padding:15px 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width:90%;
+    z-index: 10;
+    margin-left: 40px;
+}
+.logo {
+    background: transparent;
+}
+.logo-img {
+    height: 80px;
+    width: auto; 
+    background: none;
+}
+.nav a{
+    font-family:"Poppins",sans-serif;
+    font-size: 14px;
+    font-weight:normal;
+    margin-right: 40px;
+    color:black;
+    position: relative;
+    text-decoration: none;
+}
+.nav a::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:100%;
+    width:0%;
+    transition: 0.2s;
+    background: black;
+    height: 2px;
+}
+.nav a:hover::before{
+    width:100%;
+}
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.form-container {
+    background-color: rgba(255, 255, 255, 0.32); /* Translucent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 300px; 
+    margin-top: 40px;
+    margin-left: 36% ;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Noto Sans",sans-serif;
+    color: rgb(59, 54, 54);
+}
+
+label {
+    margin: 10px 0 5px;
+    font-family: "Noto Sans",sans-serif;
+    color: rgb(59, 54, 54);
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid  rgb(59, 54, 54);
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+button {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid  rgb(59, 54, 54);
+    color:  rgb(59, 54, 54);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff; 
+    color: black;
+    border: 2px solid white;
+}
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 20px; 
+    font-family: "Noto Sans",sans-serif;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+}
+
+.footer-nav li { 
+    margin: 10px 15px; 
+}
+
+.footer-nav a {
+    color: white; 
+    text-decoration: none; 
+    position: relative;
+}
+.footer-nav a::before {
+    content:'';
+    position: absolute;
+    background: white;
+    top:100%;
+    width:0;
+    left:0;
+    height: 2px;
+    transition: 0.3s;
+} 
+.footer-nav a:hover::before {
+    width: 100%; 
+}
+.copyright {
+    margin-top: 20px; 
+    font-size: 14px; 
+    margin-left: 77%;
+}
+.logo-img2 {
+    height: 20px;
+    width: auto; 
+    background: none;
+}
+.nav-logo a{
+    margin-left: 43px;
+    display: inline;
+    text-decoration: none;
+}
+footer{
+    background-color: #111;
+}
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.social-icons{
+    display: flex;  
+    justify-content: center;
+}
+.social-icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #111;
+    margin:10px;
+    border-radius:50%;
+}
+.social-icons a i{
+    font-size:2em;
+    color:white;
+}
+.social-icons a:hover{
+    background-color: black;
+    transition: 0.3s;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+}
+.footer-nav a{
+    color:white;
+    margin:20px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+    font-weight: bold;
+    font-family: 'Noto Sans',sans-serif;
+}
+.footer-nav a:hover{
+    opacity: 1;
+}
+.footer-bottom{
+    background-color: black;
+    padding: 20px;
+    text-align:center
+}
+.footer-bottom p{
+    color: white;
+}
